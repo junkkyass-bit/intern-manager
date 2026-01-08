@@ -2,6 +2,8 @@ import pymysql
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 class DatabaseManager:
     def __init__(self):
         self.conn = pymysql.connect(
